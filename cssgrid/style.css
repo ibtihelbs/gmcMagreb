@@ -1,0 +1,29 @@
+#container {
+  background-color: limegreen;
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+}
+.child {
+  background-color: pink;
+}
+.child-6 {
+  grid-column: span 3;
+}
+.child-5 {
+  grid-row: span 2;
+}
+@media (max-width: 400px) {
+  #container {
+    background-color: orange;
+    grid-template-columns: 1fr;
+  }
+  .child-6 {
+    grid-column: span 1;
+  }
+  .child-5 {
+    grid-row: span 1;
+  }
+}

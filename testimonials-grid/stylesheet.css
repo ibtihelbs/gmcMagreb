@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "barlow_semi_condensedregular";
+  src: url("./fonts/barlowsemicondensed-regular-webfont.woff2") format("woff2"),
+    url("./fonts/barlowsemicondensed-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "barlow_semi_condensedmedium";
+  src: url("./fonts/barlowsemicondensed-medium-webfont.woff2") format("woff2"),
+    url("./fonts/barlowsemicondensed-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+:root {
+  /* Purple */
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "barlow_semi_condensedregular";
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  background-color: var(--grey-200);
+  padding: 1rem;
+}
+.testimonial {
+  border-radius: 5px;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+.testimonial-1 {
+  grid-column: span 2;
+  background-color: var(--purple-500);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: var(--white);
+
+  background-image: url(./images/bg-pattern-quotation.svg);
+}
+.testimonial-2 {
+  background-color: var(--grey-400);
+  color: var(--white);
+}
+.testimonial-3 {
+  grid-row: span 2;
+  background-color: var(--white);
+}
+.testimonial-4 {
+  background-color: var(--white);
+}
+.testimonial-5 {
+  background-color: var(--dark-blue);
+  color: var(--white);
+
+  grid-column: span 2;
+}
+.user {
+  display: flex;
+  gap: 1rem;
+}
+img {
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  #container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .testimonial-1,
+  .testimonial-5 {
+    grid-column: span 1;
+  }
+}
