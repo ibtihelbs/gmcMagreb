@@ -44,6 +44,9 @@ a {
   margin: 50px;
   border-radius: var(--border-rad);
 }
+#box:hover {
+  background-color: pink;
+}
 #titre {
   color: var(--dark-blue);
 }
@@ -61,4 +64,9 @@ ul {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+.change-bg {
+  background-color: red;
+  color: white;
+  font-weight: bold;
 }
