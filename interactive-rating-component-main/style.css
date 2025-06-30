@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+:root {
+  --Orange-500: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+}
+body {
+  background-color: var(--Grey-950);
+  color: var(--White);
+}
+button {
+  cursor: pointer;
+}
+
+.grid-col {
+  background-color: var(--Grey-900);
+  width: 400px;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+.submit {
+  padding: 1rem 2rem;
+  border: none;
+  color: var(--Grey-900);
+  background-color: var(--Orange-500);
+  border-radius: 999px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  font-size: 16px;
+  color: var(--Grey-500);
+}
+.thank-u {
+  text-align: center;
+}
+.thank-u img {
+  margin: auto;
+}
+h4 {
+  color: var(--Orange-500);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: var(--Grey-500);
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+.rating button {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--Grey-500);
+}
